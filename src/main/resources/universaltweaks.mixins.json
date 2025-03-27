@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.commandninja.universaltweaks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "universaltweaks.refmap.json",
+  "mixins": [
+    "MixinItemEntity"
+  ],
+  "server": [],
+  "client": [],
+
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
