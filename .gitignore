@@ -6,3 +6,7 @@
 /run-data/
 /test/
 /.idea/
+/gradle/
+/settings.gradle
+/gradle.properties
+
