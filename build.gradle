@@ -94,6 +94,11 @@ dependencies {
     implementation fg.deobf("curse.maven:lifesteal-mian-645185:6048513")
     implementation fg.deobf("curse.maven:indestructible-blocks-1096065:5778162")
     implementation fg.deobf("curse.maven:common-network-806044:5486134")
+    //Mods für Illager-revolution
+    implementation fg.deobf("curse.maven:illagerrevolution-841586:5185405")
+    implementation fg.deobf("curse.maven:geckolib-388172:6027567")
+
+
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 

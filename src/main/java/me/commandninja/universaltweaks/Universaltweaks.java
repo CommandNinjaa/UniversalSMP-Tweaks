@@ -1,6 +1,8 @@
 package me.commandninja.universaltweaks;
 
 import com.mojang.logging.LogUtils;
+import me.commandninja.universaltweaks.config.UniversalTweaksClient;
+import me.commandninja.universaltweaks.config.UniversalTweaksCommon;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -33,7 +35,6 @@ import org.slf4j.Logger;
 @Mod(Universaltweaks.MODID)
 public class Universaltweaks {
 
-
     public static final String MODID = "universaltweaks";
 
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -46,6 +47,8 @@ public class Universaltweaks {
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, UniversalTweaksClient.SPEC, "universaltweaks-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, UniversalTweaksCommon.SPEC, "universaltweaks-common.toml");
 
     }
 
@@ -69,4 +72,5 @@ public class Universaltweaks {
             LOGGER.info("Client starting");
         }
     }
+
 }
